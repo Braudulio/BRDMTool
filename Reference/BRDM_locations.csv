@@ -1,0 +1,45 @@
+LocationType,SiteCode,CleanupLocation,Postcode,Region,T1,T2,T3,T4,FirstSurvey,KLISTargetSites
+RMB,BRB,Bribie Island (QLD),4507,Control,,,,,,EXCLUDED
+RMB,SBL,South Ballina,2478,North Coast,,,,,,EXCLUDED
+RMB,SAN,Sandon River,2463,North Coast,,,,,,EXCLUDED
+RMB,NTH,North Beach,2454,North Coast,,,,,,EXCLUDED
+RMB,KLY,Kylies Beach,2443,Mid-North Coast,,,,,,EXCLUDED
+RMB,YAG,Yagon,2423,Mid-North Coast,,,,,,EXCLUDED
+RMB,MUN,Mungo,2324,Mid-North Coast,,,,,,EXCLUDED
+RMB,BIN,Bingie Beach,2537,South Coast,,,,,,EXCLUDED
+RMB,HAY,Haywards Beach,2546,South Coast,,,,,,EXCLUDED
+RMB,BRC,Baragoot/Cuttagee,2550,South Coast,,,,,,EXCLUDED
+RMB,MLC,Mallacoota Beach (VIC),3892,Control,,,,,,EXCLUDED
+EST,NDG,Nudgee,4014,Control,55,84.1,66.5,94.8,,EXCLUDED
+EST,TWD,Tweed,2485,North Coast,13,11.2,35,12.5,25,EXCLUDED
+EST,BAL,Ballina,2478,North Coast,26,8,26,17,1,TARGET SITE
+EST,CFH,Coffs Harbour,2450,North Coast,93,76,47,63,1,TARGET SITE
+EST,PTM,Port Macquarie,2441,North Coast,7,11,28,11,1,TARGET SITE
+EST,TAR,Taree,2430,Mid-North Coast,10,5,10,8,1,TARGET SITE
+EST,FRS,Forster,2428,Mid-North Coast,26,13,11,42,1,EXCLUDED
+EST,STK,Stockton,2295,Mid-North Coast,11,18,20,26.5,1,TARGET SITE
+EST,THR,Throsby Creek,2293,Mid-North Coast,40,46,51,61,25,EXCLUDED
+EST,CCT,Central Coast,2250,Mid-North Coast,10.2,10.4,13.5,11.9,22,EXCLUDED
+EST,MDB,Meadowbank,2114,Sydney,23,26,16,17,1,TARGET SITE
+EST,CKS,Cooks River,2193,Sydney,8,5.8,8.4,8.7,21,SPECIAL
+EST,MUD,Muddy Creek,2216,Sydney,7.7,6.7,7.8,7.6,1,SPECIAL
+EST,GRG,Georges River,2221,Sydney,20,20,,,32,EXCLUDED
+EST,MIN,Minnamurra,2533,South Coast,16,21,9,10,1,EXCLUDED
+EST,BBY,Batemans Bay,2536,South Coast,15.5,33.5,19.6,33.8,1,TARGET SITE
+EST,NAR,Narooma,2546,South Coast,15,30,15.5,14,1,TARGET SITE
+EST,MER,Merimbula,2548,South Coast,30,32,22,28,1,TARGET SITE
+EST,STN,Stoney Creek,3015,Control,16,21,15,8,,EXCLUDED
+EST,OTH,Other,9999,Other,,,,,,EXCLUDED
+ALM,PEN,Penrith,2750,Regional Inland,,,,,,EXCLUDED
+ALM,TMW,Tamworth,2340,Regional Inland,,,,,,EXCLUDED
+ALM,WAG,Wagga Wagga,2650,Regional Inland,,,,,,EXCLUDED
+ALM,DUB,Dubbo River,2830,Regional Inland,,,,,,EXCLUDED
+ALM,TWD,Tweed,2485,North Coast,,,,,,EXCLUDED
+ALM,PTM,Port Macquarie,2441,North Coast,,,,,,EXCLUDED
+ALM,CFH,Coffs Harbour,2450,North Coast,,,,,,EXCLUDED
+ALM,TAR,Taree,2430,Mid-North Coast,,,,,,EXCLUDED
+ALM,CCT,Central Coast,2250,Mid-North Coast,,,,,,EXCLUDED
+ALM,MDB,Meadowbank,2114,Sydney,,,,,,EXCLUDED
+ALM,MUD,Muddy Creek,2216,Sydney,,,,,,EXCLUDED
+ALM,CKS,Cooks River,2193,Sydney,,,,,,EXCLUDED
+ALM,BBY,Batemans Bay,2536,South Coast,,,,,,EXCLUDED
