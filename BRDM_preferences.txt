@@ -1,0 +1,38 @@
+# BRDM preferences file
+#
+# Created by Brad Morris
+# Tuesday 11 November 2025
+# Last Modified Tuesday 24 March 2026
+
+# Base data path
+base_pathname = C:\01DPE\Data\KLIS-ALM\Surveys\
+
+# Base reference file(s) path
+ref_pathname = C:\01DPE\PythonTools\BRDMTool\Reference\
+
+# Survey type (EST/RMB/ALM)
+stype = EST
+# stype = RMB
+# stype = ALM
+
+# Do write to file (default is True)
+do_write = True
+#do_write = False
+
+# Do plot to file (default is True)
+#do_plot = True
+do_plot = False
+
+# Variable type ('countarea' is default)
+vtype = countarea
+#vtype = count
+
+# Classification system for grouping ('CDS' is default)
+# Note: this is generally overridden
+class_sys = CDS
+#class_sys = Total
+
+# Default ALM location types
+alm_type_all = BCH,IND,RES,RET,RPK
+
+# Survey Range ('All' is default) [NOT IMPLEMENTED]
