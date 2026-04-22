@@ -21,7 +21,6 @@ from BRDM_getPref import BRDM_getPref
 from BRDM_getLocations import BRDM_getLocations
 from BRDM_getRegions import BRDM_getRegions
 from BRDM_getValueNames import BRDM_getValueNames
-from BRDM_getValueNames import BRDM_getValueNames
 from BRDM_load_item import BRDM_load_item
 
 # Setup
