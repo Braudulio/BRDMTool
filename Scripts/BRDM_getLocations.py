@@ -14,7 +14,7 @@ import pandas as pd
 script_path = os.getcwd() + os.sep + 'Scripts' + os.sep
 sys.path.append(script_path)
 from loadCSV import loadCSV
-from pysideListALMLocType import pysideListALMLocType
+# from pysideListALMLocType import pysideListALMLocType
 
 def BRDM_getLocations(stype=None, scode=None, loc=None, ltype=None):	
 	survey_locations = loadCSV(os.getcwd() + os.sep + 'Reference' + os.sep, 'BRDM_locations.csv')
