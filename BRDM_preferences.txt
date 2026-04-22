@@ -2,13 +2,14 @@
 #
 # Created by Brad Morris
 # Tuesday 11 November 2025
-# Last Modified Tuesday 24 March 2026
+# Last Modified Thursday 23 April 2026
 
 # Base data path
 base_pathname = C:\01DPE\Data\KLIS-ALM\Surveys\
 
 # Base reference file(s) path
-ref_pathname = C:\01DPE\PythonTools\BRDMTool\Reference\
+#ref_pathname = C:\01DPE\PythonTools\BRDMTool\Reference\
+ref_pathname = /Reference/
 
 # Survey type (EST/RMB/ALM)
 stype = EST
