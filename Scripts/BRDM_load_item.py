@@ -10,7 +10,6 @@ import os, glob
 import sys
 import math
 import pandas as pd
-import streamlit as st
 
 script_path = os.getcwd() + os.sep + 'Scripts' + os.sep
 sys.path.append(script_path)
@@ -26,7 +25,6 @@ def BRDM_load_item(stype, idx_quan, vtype = 'countarea'):
 	pname = os.getcwd() + os.sep + 'Output' + os.sep
 	fname = 'BRDM_' + vtype + '_' + stype + '_' + idx_quan + '_' + BRDM_getValueNames(idx_quan, None, stype).replace(' ','')
 	# print(fname)
-	st.write(pname + fname)
 	
 	# Check if file exists [dev]
 	if os.path.exists(pname + fname + '.xlsx'):
