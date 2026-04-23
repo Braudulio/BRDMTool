@@ -125,11 +125,11 @@ with col1:
 
 		if stype == 'ALM':
 			fs = 0
+			df_combo['bar_colours'] = ['dodgerblue' for surveys in df_combo.surveys]
 		else:
 			fs = 1
-		df_combo['bar_colours'] = ['grey' if surveys == fs else 'green' for surveys in df_combo.surveys]
-		if len(df_combo)>5:
-			df_combo.iloc[1:4,3] = ['blue', 'blue', 'blue']
+			df_combo['bar_colours'] = ['grey' if surveys == fs else 'green' for surveys in df_combo.surveys]
+			df_combo.iloc[1:4,3] = ['dodgerblue', 'dodgerblue', 'dodgerblue']	
 
 		st.write('**BRDM_' + value_name + '**')
 		st.dataframe(df_combo, hide_index=True, column_config={'bar_colours': None})
