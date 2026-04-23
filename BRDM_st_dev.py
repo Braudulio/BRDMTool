@@ -64,7 +64,6 @@ with st.sidebar:
 #st.write('Selected location: ' + loc)
 
 # Get location type
-
 if stype == 'ALM':
 	ltype_list = BRDM_getPref('alm_type_all')
 	with st.sidebar:
@@ -124,7 +123,11 @@ with col1:
 		df_combo = pd.concat([count_data['surveys'].astype('Int64'), count_data[pp], stderr_data[pp]], axis=1)
 		df_combo.columns = ['surveys', 'count', 'stderr']
 
-		df_combo['bar_colours'] = ['grey' if surveys == 1 else 'green' for surveys in df_combo.surveys]
+		if stype == 'ALM':
+			fs = 0
+		else:
+			fs = 1
+		df_combo['bar_colours'] = ['grey' if surveys == fs else 'green' for surveys in df_combo.surveys]
 		if len(df_combo)>5:
 			df_combo.iloc[1:4,3] = ['blue', 'blue', 'blue']
 
@@ -155,23 +158,25 @@ with col2:
 		
 		if quan == 'count':#Single
 			pt = 'Location: ' + str(loc) + ' - Quantity: [' + idx_quan + '] ' + value_name
+		
+		if len(df_combo)<5:
+			tns = 5
+		else:
+			tns = len(df_combo)
 			
 		# Create bars
 		bars = alt.Chart(df_combo, title = pt).mark_bar(size=10).encode(
-			alt.X('surveys').title('Survey Number').scale(domain=(1,len(df_combo))),
+			alt.X('surveys').title('Survey Number').scale(domain=(1,tns)),
 			y=quan,
 			color=alt.Color('bar_colours').scale(None)
 		)
 		
-		if stype == 'ALM':
-			fs = 0
-		else:
-			fs = 1
 		# Create error bars (calculated as Value +/- Error)
 		error_bars = alt.Chart(df_combo).mark_errorbar(ticks=True).encode(
-			alt.X('surveys').scale(domain=(fs,len(df_combo))),
-			y=alt.Y(quan, title=ylab),
-			yError='stderr'
+			alt.X('surveys').axis(format='d').scale(domain=(fs,tns)),
+			alt.Y(quan, title=ylab),
+			yError='stderr',
+			color=alt.value('black')
 		)
 		
 		# Layer them and display
